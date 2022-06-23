@@ -24,6 +24,13 @@
   color: white;
 }
 
+.box1{
+  background-color: aqua;
+}
+.box2{
+  background-color: yellow;
+}
+
 .App-link {
   color: #61dafb;
 }

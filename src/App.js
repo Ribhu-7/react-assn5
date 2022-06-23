@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import ClickCounter from './components/clickCounter';
+import RightClickCounter from './components/rightClickCounter';
+
+import Higherordercomponent from './components/higherordercomponent';
+import Purecomponent from './components/purecomponent';
+import ComponentPure from './components/pureComponents';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='box1'><Higherordercomponent/>
+      <ClickCounter/>
+      <RightClickCounter/></div>
+      <div className='box2'><Purecomponent/>
+      <ComponentPure/></div>
+      
     </div>
   );
 }
